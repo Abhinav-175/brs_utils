@@ -154,7 +154,7 @@ def brs_control(optics, control_negated, threshold_lower, threshold_upper, n_gri
 
     if drift > threshold_upper:
         # Too high
-        logger.info(f"Current drift ({drift}) is higher then upper threshold ({threshold_upper})")
+        logger.info(f"Current drift ({drift}) is higher than upper threshold ({threshold_upper})")
         if control_negated:
             # Increase temperature
             increase_temperature = True
@@ -164,7 +164,7 @@ def brs_control(optics, control_negated, threshold_lower, threshold_upper, n_gri
         pass
     elif drift < threshold_lower:
         # Too low
-        logger.info(f"Current drift ({drift}) is lower then lower threshold ({threshold_lower})")
+        logger.info(f"Current drift ({drift}) is lower than lower threshold ({threshold_lower})")
         if control_negated:
             # Decrease temperature
             increase_temperature = False
